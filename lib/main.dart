@@ -28,7 +28,7 @@ class XylophoneApp extends StatelessWidget {
         backgroundColor: Colors.black,
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text("Xylophone"),
+          title: Text("Xylophone!"),
           titleTextStyle: TextStyle(
               color: Colors.purple, fontWeight: FontWeight.bold, fontSize: 25),
         ),
