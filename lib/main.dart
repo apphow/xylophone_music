@@ -29,7 +29,7 @@ class XylophoneApp extends StatelessWidget {
         backgroundColor: Colors.black,
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text("Xylophone!"),
+          title: Text("Xylophone"),
           titleTextStyle: TextStyle(
               color: Colors.purple, fontWeight: FontWeight.bold, fontSize: 25),
         ),
@@ -45,12 +45,14 @@ class XylophoneApp extends StatelessWidget {
               buildKey(color: Colors.blue[700], soundNumber: 6),
               buildKey(color: Colors.purple, soundNumber: 7),
               Expanded(
-                child: RaisedButton(
-                  color: Colors.pink[300],
-                  onPressed: () {
-                    playSound(8);
-                  },
-                ),
+                child: ElevatedButton(
+                    onPressed: () {
+                      playSound(8);
+                    },
+                    style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.pink[300]),
+                    )),
               ),
             ],
           ),
